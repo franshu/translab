@@ -2,25 +2,64 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Document</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Translab</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<!--secction -->
-<!-- /.cierre -->
+<!--page01 -->
+	<section class="bg-img">
+        <div class="container center">
+            <div class="row">
+                <div class="col s12">
+                    <img class="img-responsive logo-t center" src="assets/img/imagen.png">
+                    <h2>TRANS-LAB</h2>
+                </div>
+        	</div>
+       	</div>
+        <!--imputs -->
+        <div class="row center bg-box">
+			<form class="col s12">
+					<div class="row">
+			        <div class="input-field col s12">
+			          <i class="material-icons prefix">perm_identity</i>
+			          <input id="icon_prefix" type="text" class="validate">
+			          <label for="icon_prefix">Correo</label>
+			        </div>
+			    </div>
+			    <div class="row">
+			        <div class="input-field col s12">
+			          <i class="material-icons prefix">lock_outline</i>
+			          <input id="pass" type="pass" class="validate">
+			          <label for="icon_lock">Contraseña</label>
+			        </div>
+			    </div>
+			</form>
+		</div>
+        <div class="row">
+            <div class="btn-style col s12 center">
+                <a class="waves-effect amber darken-1 btn-large btn">INICIAR SESIÓN</a>
+                <!--Enlazar boton con page02 href="home.html"-->
+            </div>     
+        </div>  
+		<div class="row">
+			<div class="col s12 other-user">
+				<p class="left-align forget-pass">¿Olvidaste tu contraseña?</p>
+				<p class="center">¿NO TIENES CUENTA? <a>REGÍSTRATE<a></p>
+        	</div>
+		</div>
+	</section><!-- /.cierre bg-img -->
 
-<!--Script-->
-  <!-- font awesome -->
-  <script src="https://use.fontawesome.com/7c2c73414b.js"></script>
-   <!-- jquery -->
+	<!--Script-->
+	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- bootstrap -->
- 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
-  <!-- javaScript -->
-  <script src="assets/js/main.js"></script>
+	<!-- materialize -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>	
+	<!-- javaScript -->
+	<script src="assets/js/main.js"></script>
 	
 </body>
 </html>
