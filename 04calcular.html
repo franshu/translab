@@ -31,34 +31,57 @@
 			<input placeholder="Número tarjeta" id="first_name2" type="text" class="validate">
 		</div>
 	</div> <!-- /.cierre Saldo-->
-	<!--Select tarjeta-->
+	
 	<div class="row">
-		<div class="col s12">
+		<!--Select Tarifa-->
+		<div class="col s6">
+			<label for="tarifa" data-error="wrong" data-success="right">Tarifa</label>
 			<select class="browser-default">
-				<option value="" disabled selected>Choose your option</option>
+				<option value="" disabled selected>Seleccione la Tarifa</option>
+				<option value="1">Horario Alto</option>
+				<option value="2">Horario Medio</option>
+				<option value="3">Horario Bajo</option>
+			</select> <!-- /.cierre select-->
+		</div>
+		<!--Select tarjeta-->
+		<div class="col s6">
+			<label for="tarjeta" data-error="wrong" data-success="right">Tarjeta Bip!</label>
+			<select class="browser-default">
+				<option value="" disabled selected>Selecione la Tarjeta</option>
 				<option value="1">Option 1</option>
 				<option value="2">Option 2</option>
 				<option value="3">Option 3</option>
 			</select> <!-- /.cierre select-->
 		</div>
 	</div>
-	<!--Boton ver saldo-->
+	<!--Boton Calcular-->
 	<div class="row">
 		<div class="btn-style col s12 center">
-		<a class="waves-effect amber darken-1 btn">VER SALDO</a>
+		<a class="waves-effect amber darken-1 btn">CALCULAR</a>
 		<!--funcionalidad btn en js"-->
 		</div>     
 	</div> <!-- /.cierre select-->
-
-	
-	<table class="text-center">
-		<tr class="blue-grey darken-4">
-			<td><h6>Saldo Total</h6></td>
-		</tr>
-		<tr class="amber darken-1">
-			<td id="total">$1.480</td>
-		</tr>
-	</table>
+	<!--boxes tarifa y saldo-->
+	<div class="row">
+		<div class="col s12">
+			<table class="text-center">
+				<tr class="blue-grey darken-4">
+					<td><h6>Tarifa</h6></td>
+				</tr>
+				<tr class="amber darken-1">
+					<td id="tarifa">$680</td>
+				</tr>
+			</table>
+			<br>
+			<table class="text-center">
+				<tr class="blue-grey darken-4">
+					<td><h6>Saldo Total</h6></td>
+				</tr>
+				<tr class="amber darken-1">
+					<td id="total-tarifa">$1.480</td>
+				</tr>
+			</table>
+		</div>
 	<!--Script-->
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
