@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Ver Saldo</title>
+	<title>Perfil</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-	<link rel="stylesheet" href="assets/css/style03.css">
+	<link rel="stylesheet" href="assets/css/style05.css">
 </head>
 <body><!--page03 Ver Saldo-->
 	<nav> <!--sidenav-->
@@ -25,40 +25,47 @@
 		</div>
 	</nav><!-- /.cierre sidenav-->
 
+	<!-- Page 05 Perfil-->
+	<div class="row">
+		<div class="col s12 bg-color">
+			<img class="circle responsive-img" src="assets/img/foto-perfil.jpg">
+		</div>
+	</div> <!-- /.cierre perfil-->
+	<!--Agregar correo-->
+	<div class="row">
+		<form class="col s12">
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="email" type="email" class="validate" placeholder="usuario@laboratoria.cl">
+					<label for="email" data-error="wrong" data-success="right"></label>
+				</div>
+ 			</div>
+		</form>
+	</div><!-- /.cierre correo-->
 	<!--Imput tarjeta-->
 	<div class="row">
 		<div class="input-field col s12 center">
-			<input placeholder="Número tarjeta" type="text" class="validate">
+			<div class="row">
+				<input placeholder="Número tarjeta" type="text" class="validate">
+			</div>
 		</div>
 	</div> <!-- /.cierre tarjeta-->
-	<!--Select tarjeta-->
-	<div class="row">
-		<div class="col s12">
-			<select class="browser-default">
-				<option value="" disabled selected>Choose your option</option>
-				<option value="1">Option 1</option>
-				<option value="2">Option 2</option>
-				<option value="3">Option 3</option>
-			</select> <!-- /.cierre select-->
-		</div>
-	</div>
-	<!--Boton ver saldo-->
+	<!--Btn agregar tarjeta-->
 	<div class="row">
 		<div class="btn-style col s12 center">
-		<a class="waves-effect amber darken-1 btn">VER SALDO</a>
-		<!--funcionalidad btn en js"-->
+			<a class="waves-effect amber darken-1 btn">AGREGAR TARJETA</a>
+			<!--funcionalidad btn en js como la lista TO DO (append)"-->
 		</div>     
 	</div> <!-- /.cierre select-->
+	<!--Listado de Tarjetas-->
+	<div class="row">
+          <div class="col s12">
+            <ul>
+            <!-- listado tarjetas que se van agregando-->
+            </ul>
+          </div>
+   </div><!-- /.cierre select-->
 
-	<!--box-saldo donde se usa la api-->
-	<table class="text-center">
-		<tr class="blue-grey darken-4">
-			<td><h6>Saldo Total</h6></td>
-		</tr>
-		<tr class="amber darken-1">
-			<td id="total">$1.480</td>
-		</tr>
-	</table>
 	<!--Script-->
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -66,7 +73,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>	
 	<!-- javaScript -->
 	<script src="assets/js/sidenav.js"></script>
-	<script src="assets/js/main03.js"></script>
+	<script src="assets/js/main05.js"></script>
 	
 </body>
 </html>
