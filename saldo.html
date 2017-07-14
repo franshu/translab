@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Home</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<link rel="stylesheet" href="assets/css/style03.css">
+</head>
+<body><!--page03 Ver Saldo-->
+	<nav> <!--sidenav-->
+		<div class="nav-wrapper blue-grey darken-4">
+	    	<a href="#" class="brand-logo"><h5>TRANS-LAB</h5></a>
+			<ul id="slide-out" class="side-nav">
+				<li><a class="waves-effect" href="#saldo.html"><i class="material-icons">attach_money</i>Ver Saldo</a></li>
+				<li><a class="waves-effect" href="#calculo.html"><i class="material-icons">view_comfyt</i>Calcular Tarifa</a></li>
+				<li><a class="waves-effect" href="#perfil.html"><i class="material-icons">account_circle</i>Perfil</a></li>
+				<li><a class="waves-effect" href="#faq.html"><i class="material-icons">question_answer</i>Preguntas Frecuentes</a></li>
+				<div class="divider"></div>
+				<li><a class="waves-effect" href="#home.html"><i class="material-icons">home</i>Home</a></li>
+			</ul>
+			<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav><!-- /.cierre sidenav-->
+
+	<!--Imput tarjeta-->
+	<div class="row">
+		<div class="input-field col s12 center">
+			<input placeholder="Número tarjeta" id="first_name2" type="text" class="validate">
+		</div>
+	</div> <!-- /.cierre Saldo-->
+	<!--Select tarjeta-->
+	<div class="row">
+		<div class="col s12">
+			<select class="browser-default">
+				<option value="" disabled selected>Choose your option</option>
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+			</select> <!-- /.cierre select-->
+		</div>
+	</div>
+	<!--Boton ver saldo-->
+	<div class="row">
+		<div class="btn-style col s12 center">
+		<a class="waves-effect amber darken-1 btn">VER SALDO</a>
+		<!--funcionalidad btn en js"-->
+		</div>     
+	</div> <!-- /.cierre select-->
+
+	<!--box-saldo donde se usa la api-->
+	<table class="text-center">
+		<tr class="blue-grey darken-4">
+			<td><h6>Saldo Total</h6></td>
+		</tr>
+		<tr class="amber darken-1">
+			<td id="total">$1.480</td>
+		</tr>
+	</table>
+	<!--Script-->
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- materialize -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>	
+	<!-- javaScript -->
+	<script src="assets/js/sidenav.js"></script>
+	<script src="assets/js/main03.js"></script>
+	
+</body>
+</html>
