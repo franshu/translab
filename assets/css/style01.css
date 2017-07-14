@@ -29,11 +29,11 @@ h2{
 .btn-style{
 	width: 80%;
 }
-
 .btn-style a{
 	font-weight: 300;
 	color: #3E3F41;
 }
+
 .other-user p{
 	font-weight: 400;
 	font-size: 12px;
@@ -43,7 +43,6 @@ h2{
 .forget-pass{
 	padding-right: 20px;
 }
-
 .other-user p a{
 	font-weight: 500;
 	color: #F6A800;
