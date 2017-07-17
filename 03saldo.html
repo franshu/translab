@@ -40,25 +40,31 @@
 		</div>
 	</div>
 	<!--Boton ver saldo-->
-	<div class="row">
+	
+		<div class="row">
 		<div class="btn-style col s12 center">
-		<a class="waves-effect amber darken-1 btn" id="view-balance">VER SALDO</a>
+			<a class="waves-effect amber darken-1 btn" id="view-balance">VER SALDO</a>
 		<!--funcionalidad btn en js"-->
-		</div>     
+		</div>    
+	
 	</div> <!-- /.cierre select-->
 
 	<!--box-saldo donde se usa la api-->
-	<table class="text-center " style="display: none;">
-		<tr class="blue-grey darken-4">
-			<td>
-			<h6>Saldo Actual Tarjeta Nº</h6>
-			<span id="bip-number"></span>
-			</td>
-		</tr>
-		<tr class="amber darken-1">
-			<td id="total"></td>
-		</tr>
-	</table>
+	<div class="container center"
+		<div class="row">
+			<table class="text-center center" style="display: none;">
+				<tr class="blue-grey darken-4">
+					<td>
+					<h6>Saldo Actual Tarjeta Nº</h6>
+					<span id="bip-number"></span>
+					</td>
+				</tr>
+				<tr class="amber darken-1">
+					<td id="total"></td>
+				</tr>
+			</table>
+		</div>
+	</div> 
 	<!--Script-->
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
