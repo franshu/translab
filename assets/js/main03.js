@@ -50,7 +50,7 @@ $(document).ready(function() {
 
 			})
 			.error(function(data){
-    			$('#total').html('no disponible');
+    			$('#total').html('No es una Tarjeta válida.');
 
 			});
 		}else{

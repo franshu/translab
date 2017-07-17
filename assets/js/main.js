@@ -32,9 +32,10 @@ $(document).ready(function(){
 
     // If x is Not a Number or less than one or greater than 10 (3wschool)
     //validacion para que sean solo digitos númericos
-
-    if (isNaN(password) || x < 0){
+   
+    if (isNaN(password) || parseInt(password) < 0){
         e.preventDefault();
+
         var text = "La contraseña solo permite números.";
         $('#NaN').html(text);
     }

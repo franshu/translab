@@ -1,0 +1,43 @@
+*{
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background-color: #DDDEE0;
+	height: 100%;
+	font-size: 11px; 
+}
+
+/*02home*/
+.opciones{
+	padding-top: 75px;
+}
+.opciones a{
+	font-weight: 300;
+    font-size: 10px;
+    width: 200px;
+    margin: 10px;
+}
+/*03saldo & 04calcular*/
+table{
+	padding-left: 25px;
+	width: 80%;
+	display: none;
+}
+
+table td{
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+/*05perfil*/
+
+.bg-color{
+	background-color: #F6A800;	
+}
+
+.size-img{
+    width: 70%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
