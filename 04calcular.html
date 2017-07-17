@@ -14,12 +14,12 @@
 		<div class="nav-wrapper blue-grey darken-4">
 	    	<a href="#" class="brand-logo"><h5>TRANS-LAB</h5></a>
 			<ul id="slide-out" class="side-nav">
-				<li><a class="waves-effect" href="#03saldo.html"><i class="material-icons">attach_money</i>Ver Saldo</a></li>
-				<li><a class="waves-effect" href="#04calculo.html"><i class="material-icons">view_comfyt</i>Calcular Tarifa</a></li>
-				<li><a class="waves-effect" href="#05perfil.html"><i class="material-icons">account_circle</i>Perfil</a></li>
-				<li><a class="waves-effect" href="#06faq.html"><i class="material-icons">question_answer</i>Preguntas Frecuentes</a></li>
+				<li><a class="waves-effect" href="03saldo.html"><i class="material-icons">attach_money</i>Ver Saldo</a></li>
+				<li><a class="waves-effect" href="04calcular.html"><i class="material-icons">view_comfyt</i>Calcular Tarifa</a></li>
+				<li><a class="waves-effect" href="05perfil.html"><i class="material-icons">account_circle</i>Perfil</a></li>
+				<li><a class="waves-effect" href="06faq.html"><i class="material-icons">question_answer</i>Preguntas Frecuentes</a></li>
 				<div class="divider"></div>
-				<li><a class="waves-effect" href="#02home.html"><i class="material-icons">home</i>Home</a></li>
+				<li><a class="waves-effect" href="02home.html"><i class="material-icons">home</i>Home</a></li>
 			</ul>
 			<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 		</div>
@@ -28,57 +28,55 @@
 	<!--Imput tarjeta-->
 	<div class="row">
 		<div class="input-field col s12 center">
-			<input placeholder="Número tarjeta" id="first_name2" type="text" class="validate">
+			<input placeholder="Número tarjeta" id="bip-input" type="text" class="validate">
 		</div>
 	</div> <!-- /.cierre Saldo-->
 	
 	<div class="row">
 		<!--Select Tarifa-->
 		<div class="col s6">
-			<label for="tarifa" data-error="wrong" data-success="right">Tarifa</label>
-			<select class="browser-default">
+			<label for="rate" data-error="wrong" data-success="right">Tarifa</label>
+			<select class="browser-default" id='rate'>
 				<option value="" disabled selected>Seleccione la Tarifa</option>
-				<option value="1">Horario Alto</option>
-				<option value="2">Horario Medio</option>
-				<option value="3">Horario Bajo</option>
+				<option value="780">Horario Alto</option>
+				<option value="680">Horario Medio</option>
+				<option value="640">Horario Bajo</option>
 			</select> <!-- /.cierre select-->
 		</div>
 		<!--Select tarjeta-->
 		<div class="col s6">
 			<label for="tarjeta" data-error="wrong" data-success="right">Tarjeta Bip!</label>
-			<select class="browser-default">
+			<select class="browser-default" id="bip-select-list">
 				<option value="" disabled selected>Selecione la Tarjeta</option>
-				<option value="1">Option 1</option>
-				<option value="2">Option 2</option>
-				<option value="3">Option 3</option>
+				<option value=""></option>
 			</select> <!-- /.cierre select-->
 		</div>
 	</div>
 	<!--Boton Calcular-->
 	<div class="row">
 		<div class="btn-style col s12 center">
-		<a class="waves-effect amber darken-1 btn">CALCULAR</a>
+		<a class="waves-effect amber darken-1 btn" id="calculate-balance" >CALCULAR</a>
 		<!--funcionalidad btn en js"-->
 		</div>     
 	</div> <!-- /.cierre select-->
 	<!--boxes tarifa y saldo-->
 	<div class="row">
 		<div class="col s12">
-			<table class="text-center">
+			<table class="text-center" style="display: none;">
 				<tr class="blue-grey darken-4">
 					<td><h6>Tarifa</h6></td>
 				</tr>
 				<tr class="amber darken-1">
-					<td id="tarifa">$680</td>
+					<td id="tarifa"></td>
 				</tr>
 			</table>
 			<br>
-			<table class="text-center">
+			<table class="text-center" style="display: none;">
 				<tr class="blue-grey darken-4">
 					<td><h6>Saldo Total</h6></td>
 				</tr>
 				<tr class="amber darken-1">
-					<td id="total-tarifa">$1.480</td>
+					<td id="total-tarifa">$</td>
 				</tr>
 			</table>
 		</div>
